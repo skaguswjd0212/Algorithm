@@ -1,0 +1,12 @@
+n, m = map(int, input().split())
+
+result = []
+arr = []
+for _ in range(n):
+    data = list(map(int, input().split()))
+    result.append(min(data))
+    
+print(max(result))
+
+
+#파이썬 문법에 익숙치 않은 듯

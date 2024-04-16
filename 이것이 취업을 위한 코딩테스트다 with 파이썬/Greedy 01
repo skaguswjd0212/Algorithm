@@ -1,1 +1,28 @@
+#오답노트는 주석으로 표시
+
+N, M, K = map(int, input().split())
+list = list(map(int, input().split()))
+#list를 안 넣음
+
+list.sort(reverse=True)
+sum = 0
+first = list[0]
+second= list[1]
+
+while True:
+    for i in range(K):
+        if M == 0:
+            break
+        sum+=first
+        M-=1
+        
+    if M == 0:
+        break
+
+    sum+=second
+    M-=1
+        
+print(sum)
+
+#p94 M%(K+1) 이해 안 됨
 

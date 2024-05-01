@@ -1,0 +1,17 @@
+garden_x = {"a":1, "b":2, "c":3, "d":4, "e":5, "f":6, "g":7, "h":8}
+spot = input()
+x = garden_x[spot[0]]
+y = int(spot[1])
+sum = 0
+
+motion_x = [-2, 2, -2, 2, -1, 1, -1, 1]
+motion_y = [-1, -1, 1, 1, -2, -2, 2, 2]
+
+for i in range(len(motion_x)):
+    next_x = x + motion_x[i]
+    next_y = y + motion_y[i]
+    if next_x < 1 or next_y < 1 or next_x > 8 or next_y > 8 :
+        continue
+    sum+=1
+
+print(sum)

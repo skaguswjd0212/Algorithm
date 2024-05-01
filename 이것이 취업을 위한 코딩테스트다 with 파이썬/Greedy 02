@@ -1,7 +1,7 @@
 n, m = map(int, input().split())
 
 result = []
-arr = []
+
 for _ in range(n):
     data = list(map(int, input().split()))
     result.append(min(data))

@@ -5,7 +5,7 @@ n, k = map(int, input().split())
 removed_list = []
 queue = deque()
 
-#큐에 1~7 삽입
+#큐에 1~N 삽입
 for i in range(1, n+1):
     queue.append(i)
 
